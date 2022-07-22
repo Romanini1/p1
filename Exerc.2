@@ -1,0 +1,32 @@
+public class Main {
+
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        
+        Integer vet[] = new Integer[15];
+        
+        int TotalM = 1;
+        
+          System.out.println("Insira elementos no vetor: ");
+            for(int i = 0; i < 15; i++){
+            
+              System.out.println(i+": ");
+              vet[i] = input.nextInt(); 
+        }
+        
+            for(int i = 0; i < 15; i++){
+           
+              if(vet[i] % 2 ==0 )
+            TotalM = TotalM *  vet[i];
+           
+        }
+        
+        System.out.println("Multiplicação dos elementos do vetor: " + TotalM);
+        
+    }
+    
+}
+
+    
+
